@@ -44,7 +44,7 @@ public class Controller {
 	 */
 	public void registerItem(int itemIdentifier, int quantity){
 		if(checkItem(itemIdentifier)){
-			Item item = itemCatalog.Item(itemIdentifier,quantity);
+			Item item = itemCatalog.getItem(itemIdentifier,quantity);
 			itemCatalog.updateCatalog(ItemDTO itemDTO);
 			sale.addValidItem(itemIdentifier,quantity);
 		}
