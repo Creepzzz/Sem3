@@ -12,7 +12,7 @@ public class Controller {
 	private Sale sale;
 	private InventorySystem inventorySystem;
 	private AccountingSystem accountingSystem;
-	private ItemCatalog = itemCatalog;
+	private ItemCatalog itemCatalog;
 	private Printer printer;
 	/**
 	 * Starts a new sale. This method must be called first before the process of a sale.
