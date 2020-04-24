@@ -22,8 +22,13 @@ public class ControllerTest{
   }
   
   @Test
-  public void checkItem(){
+  public void checkItemExists(){
     ctrl.startNewSale();
+    int testQuantity = 1;
+    boolean excepctedResult = false;
+    ItemCatalog itemCatalog = new ItemCatalog();
+    boolean actualResult = itemCatalog.itemExcists(testQuantity);
+    assertEquals("The item does not exist in the database", expectedResult, actualResult);
   }
   
   @Test
