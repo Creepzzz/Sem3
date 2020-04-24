@@ -14,6 +14,7 @@ public class Controller {
 	private AccountingSystem accountingSystem;
 	private ItemCatalog itemCatalog;
 	private Printer printer;
+	private SaleInfo saleInfo;
 	/**
 	 * Starts a new sale. This method must be called first before the process of a sale.
 	 */
@@ -65,5 +66,7 @@ public class Controller {
 	 */
 	public void paid(int paidAmmount){
 		Payment payment = new Payment(paidAmmount, sale.getTotal());
+		accountingSystem.updateAccount(sale.getTotal());
+		inventorySystem.updateInventory(saleInfo);
 	}
 }
