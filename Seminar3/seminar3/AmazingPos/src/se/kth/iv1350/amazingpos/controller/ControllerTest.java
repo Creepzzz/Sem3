@@ -18,13 +18,16 @@ public class ControllerTest{
   
   @Test
   public void registerItem(){
+    ctrl.startNewSale();
   }
   
   @Test
   public void checkItem(){
+    ctrl.startNewSale();
   }
   
   @Test
   public void paid(){
+    ctrl.startNewSale();
   }
 }
