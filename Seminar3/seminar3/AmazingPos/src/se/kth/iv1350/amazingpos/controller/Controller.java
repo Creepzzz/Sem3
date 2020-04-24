@@ -64,6 +64,6 @@ public class Controller {
 	 * @param paidAmmount      Specifies the ammount customer has paid
 	 */
 	public void paid(int paidAmmount){
-		Payment payment = new Payment(paidAmmount);
+		Payment payment = new Payment(paidAmmount, sale.getTotal());
 	}
 }
