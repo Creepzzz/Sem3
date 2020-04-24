@@ -65,6 +65,5 @@ public class Controller {
 	 */
 	public void paid(int paidAmmount){
 		Payment payment = new Payment(paidAmmount);
-		addAmmountPaid(payment);   //ändra
 	}
 }
